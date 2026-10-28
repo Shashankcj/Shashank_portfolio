@@ -4,3 +4,21 @@
 @media(max-width:600px){header,main>section,footer{width:calc(100% - 30px)}header{height:67px}.brand{font-size:14px}nav{gap:8px;font-size:10px}nav a:not(.navbtn){display:none}.navbtn{padding:8px}.hero{padding:50px 0 40px}h1{font-size:42px;letter-spacing:-2px}.intro>p{font-size:13px}.visual{height:285px;margin:0 -4px}.window pre{font-size:9px;padding:16px 9px}.float{padding:9px}.float b{font-size:9px}.float small{font-size:7px}.f1{top:20px}.f2{bottom:26px}.section{padding:42px 0 22px}.heading{display:block}.heading>p{margin-top:13px}.heading h2{font-size:31px}.aboutgrid{grid-template-columns:1fr}.stats .panel{padding:14px}.stats b{font-size:15px}.skills,.projects{grid-template-columns:1fr}.project:last-child{grid-column:auto}.projectbody p{min-height:0}.contact{margin-top:45px;padding:40px 14px}.contact h2{font-size:31px}.contactmeta{line-height:1.8}footer{padding:18px 0;gap:10px;flex-wrap:wrap}footer p{order:3;width:100%}}
 
 .brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none}.brand-photo{width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid #6c8cff;flex-shrink:0}
+.skills-banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 16px;
+  margin: 28px 0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 768px) {
+  .skills-banner {
+    max-height: 200px;
+    border-radius: 10px;
+  }
+}
