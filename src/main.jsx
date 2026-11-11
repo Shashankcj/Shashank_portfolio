@@ -9,7 +9,14 @@ const skills=[
 ['Backend',Server,['Spring Boot','Spring MVC','Django REST Framework','REST APIs','Microservices','gRPC']],
 ['Frontend',Layers3,['React','Next.js','Redux Toolkit','RTK Query','HTML5','CSS3','Tailwind CSS']],
 ['Databases & Messaging',Database,['PostgreSQL','MySQL','MongoDB','Redis','RabbitMQ','Kafka','NATS']],
-['DevOps & Cloud Native',Cloud,['Docker','Docker Compose','Kubernetes','GitHub Actions','Argo CD','Terraform','Ansible','Linux']],
+['DevOps & Cloud Native', Cloud, [
+  'Docker', 'Kubernetes', 'OpenShift', 'Helm', 'Argo CD',
+  'Argo Rollouts', 'GitHub Actions', 'GitLab CI/CD', 'Terraform', 'Ansible', 'Linux'
+]],
+['AWS & Observability', Cloud, [
+  'Ec2','S3','EBS','EFS','EKS', 'VPC','ECS','Fargate', 'IAM', 'ALB', 'Transit Gateway', 'Route 53',
+  'CloudWatch', 'Prometheus', 'Grafana', 'Loki','Lamda'
+]],
 ['Testing & Security',Workflow,['JUnit','Mockito','Pytest','Selenium','Postman','OAuth 2.0','OIDC','JWT']]
 ];
 
@@ -81,6 +88,39 @@ const projects = [
       "Ansible"
     ],
     icon: "layers"
+  },
+    {
+    n: "04",
+    type: "AWS DEVOPS · INFRASTRUCTURE AS CODE · GITOPS",
+    title: "Production-Grade AWS DevOps Platform on EKS",
+    desc: "Designed and provisioned a multi-AZ AWS environment with Terraform, including VPC, public/private subnets, NAT and Internet Gateways, Transit Gateway and VPC Peering. Deployed an EKS cluster with autoscaling node groups behind an ALB, with Route 53, ACM TLS, ECR and RDS. Secured the network with Security Groups, NACLs, WAF, Network Firewall, VPC Endpoints, PrivateLink, least-privilege IAM and KMS. Built GitHub Actions CI/CD pipelines with self-hosted runners and SonarQube, GitLeaks, Checkov and Trivy security gates. Implemented GitOps with Argo CD and Helm, plus canary and blue-green releases with Argo Rollouts and Prometheus-based automatic rollback. Hardened the cluster with RBAC, NetworkPolicies, Pod Security Admission, Falco and Istio mTLS, and added Prometheus, Grafana and Loki for monitoring and alerting.",
+    tags: [
+      "AWS",
+      "Terraform",
+      "EKS",
+      "VPC",
+      "Transit Gateway",
+      "ALB",
+      "Route 53",
+      "ECR",
+      "RDS",
+      "IAM",
+      "KMS",
+      "WAF",
+      "GitHub Actions",
+      "SonarQube",
+      "Trivy",
+      "Checkov",
+      "Argo CD",
+      "Argo Rollouts",
+      "Helm",
+      "Istio",
+      "Falco",
+      "Prometheus",
+      "Grafana",
+      "Loki"
+    ],
+    icon: "cloud"
   }
 ];
 
